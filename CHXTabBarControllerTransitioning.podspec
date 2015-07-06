@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
 :tag => s.version.to_s }
   s.requires_arc = true
   s.source_files  = "CHXTabBarControllerTransitioning/Source/*.{h, m}"
-  s.f
+  s.frameworks = 'Foundation', 'UIKit'
+end
