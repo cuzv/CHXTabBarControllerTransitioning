@@ -27,9 +27,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, CHXTabBarTransitioningAnimatorStyle) {
+    CHXTabBarTransitioningAnimatorStyleFlip,
+    CHXTabBarTransitioningAnimatorStyleCover,
+    CHXTabBarTransitioningAnimatorStyleRotate
+};
+
 @interface CHXTabBarTransitioningAnimatorCarrier : NSObject <UITabBarControllerDelegate>
 
 - (instancetype)initWithTabBarController:(UITabBarController *)tabBarController;
+- (instancetype)initWithTabBarController:(UITabBarController *)tabBarController transitioningAnimatorStyle:(CHXTabBarTransitioningAnimatorStyle)transitioningAnimatorStyle;
 @property (nonatomic, assign) BOOL enablePanGestureRecognizer;
 
 @end

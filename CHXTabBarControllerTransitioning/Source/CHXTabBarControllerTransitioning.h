@@ -28,6 +28,8 @@
 #define CHXTabBarControllerTransitioning_CHXTabBarControllerTransitioning_h
 
 #import "CHXTabBarTransitioningAnimatorCarrier.h"
-#import "CHXTabBarTransitioningAnimator.h"
+#import "CHXTabBarTransitioningFlipAnimator.h"
+#import "CHXTabBarTransitioningCoverAnimator.h"
+#import "CHXTabBarTransitioningRotateAnimator.h"
 
 #endif

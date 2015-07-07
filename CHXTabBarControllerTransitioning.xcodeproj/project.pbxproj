@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46809A561B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46809A551B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.m */; };
+		46809A591B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46809A581B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.m */; };
 		46E112761B4A63D600A03EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E112751B4A63D600A03EE4 /* main.m */; };
 		46E112791B4A63D600A03EE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E112781B4A63D600A03EE4 /* AppDelegate.m */; };
 		46E1127C1B4A63D600A03EE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E1127B1B4A63D600A03EE4 /* ViewController.m */; };
@@ -14,7 +16,7 @@
 		46E112811B4A63D600A03EE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E112801B4A63D600A03EE4 /* Images.xcassets */; };
 		46E112841B4A63D600A03EE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E112821B4A63D600A03EE4 /* LaunchScreen.xib */; };
 		46E112901B4A63D600A03EE4 /* CHXTabBarControllerTransitioningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E1128F1B4A63D600A03EE4 /* CHXTabBarControllerTransitioningTests.m */; };
-		46E1129D1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E1129C1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.m */; };
+		46E1129D1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E1129C1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.m */; };
 		46E112A01B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E1129F1B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.m */; };
 		46E112A31B4A71DA00A03EE4 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E112A21B4A71DA00A03EE4 /* TabBarController.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46809A541B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHXTabBarTransitioningCoverAnimator.h; sourceTree = "<group>"; };
+		46809A551B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHXTabBarTransitioningCoverAnimator.m; sourceTree = "<group>"; };
+		46809A571B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHXTabBarTransitioningRotateAnimator.h; sourceTree = "<group>"; };
+		46809A581B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHXTabBarTransitioningRotateAnimator.m; sourceTree = "<group>"; };
 		46E112701B4A63D600A03EE4 /* CHXTabBarControllerTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHXTabBarControllerTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E112741B4A63D600A03EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E112751B4A63D600A03EE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,8 +49,8 @@
 		46E112891B4A63D600A03EE4 /* CHXTabBarControllerTransitioningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHXTabBarControllerTransitioningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E1128E1B4A63D600A03EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E1128F1B4A63D600A03EE4 /* CHXTabBarControllerTransitioningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHXTabBarControllerTransitioningTests.m; sourceTree = "<group>"; };
-		46E1129B1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHXTabBarTransitioningAnimator.h; sourceTree = "<group>"; };
-		46E1129C1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHXTabBarTransitioningAnimator.m; sourceTree = "<group>"; };
+		46E1129B1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHXTabBarTransitioningFlipAnimator.h; sourceTree = "<group>"; };
+		46E1129C1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHXTabBarTransitioningFlipAnimator.m; sourceTree = "<group>"; };
 		46E1129E1B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHXTabBarTransitioningAnimatorCarrier.h; sourceTree = "<group>"; };
 		46E1129F1B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHXTabBarTransitioningAnimatorCarrier.m; sourceTree = "<group>"; };
 		46E112A11B4A71DA00A03EE4 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -127,11 +133,15 @@
 		46E112991B4A63DD00A03EE4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				46E1129B1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.h */,
-				46E1129C1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.m */,
+				46E112AD1B4A8FEA00A03EE4 /* CHXTabBarControllerTransitioning.h */,
 				46E1129E1B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.h */,
 				46E1129F1B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.m */,
-				46E112AD1B4A8FEA00A03EE4 /* CHXTabBarControllerTransitioning.h */,
+				46E1129B1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.h */,
+				46E1129C1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.m */,
+				46809A541B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.h */,
+				46809A551B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.m */,
+				46809A571B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.h */,
+				46809A581B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -252,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46E1129D1B4A640C00A03EE4 /* CHXTabBarTransitioningAnimator.m in Sources */,
+				46E1129D1B4A640C00A03EE4 /* CHXTabBarTransitioningFlipAnimator.m in Sources */,
 				46E1127C1B4A63D600A03EE4 /* ViewController.m in Sources */,
+				46809A561B4B77BD0084F5E9 /* CHXTabBarTransitioningCoverAnimator.m in Sources */,
+				46809A591B4B78510084F5E9 /* CHXTabBarTransitioningRotateAnimator.m in Sources */,
 				46E112791B4A63D600A03EE4 /* AppDelegate.m in Sources */,
 				46E112A31B4A71DA00A03EE4 /* TabBarController.m in Sources */,
 				46E112A01B4A644100A03EE4 /* CHXTabBarTransitioningAnimatorCarrier.m in Sources */,

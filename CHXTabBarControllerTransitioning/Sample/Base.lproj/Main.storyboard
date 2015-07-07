@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.58382444389999999" blue="0.29656185559999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RYV-oh-ufD" firstAttribute="leading" secondItem="i0a-YX-rK0" secondAttribute="leadingMargin" id="6tK-9E-U4V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RYV-oh-ufD" secondAttribute="trailing" constant="8" id="n2R-83-JGE"/>
@@ -56,14 +56,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="H7h-dP-oe2" firstAttribute="top" secondItem="Rpf-93-PiS" secondAttribute="bottom" id="Zcm-JJ-cka"/>
                             <constraint firstItem="H7h-dP-oe2" firstAttribute="leading" secondItem="n2V-wf-DyU" secondAttribute="leadingMargin" id="hgK-AB-RRW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H7h-dP-oe2" secondAttribute="trailing" constant="8" id="iDl-aF-v9T"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item3" id="PJR-HS-3ZR"/>
+                    <tabBarItem key="tabBarItem" title="Item 3" id="PJR-HS-3ZR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41s-Bt-wkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Bdh-bz-2N5" secondAttribute="trailing" constant="8" id="O8Q-aN-edv"/>
                             <constraint firstItem="Bdh-bz-2N5" firstAttribute="top" secondItem="soW-Hi-BGJ" secondAttribute="bottom" constant="-8" id="eZj-ix-z3X"/>

@@ -25,13 +25,15 @@
 //
 
 #import "CHXTabBarTransitioningAnimatorCarrier.h"
-#import "CHXTabBarTransitioningAnimator.h"
+#import "CHXTabBarTransitioningFlipAnimator.h"
+#import "CHXTabBarTransitioningCoverAnimator.h"
+#import "CHXTabBarTransitioningRotateAnimator.h"
 
 @interface CHXTabBarTransitioningAnimatorCarrier () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) UITabBarController *tabBarController;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
-@property (nonatomic, strong) CHXTabBarTransitioningAnimator *transitioningAnimator;
+@property (nonatomic, strong) id <UIViewControllerAnimatedTransitioning> transitioningAnimator;
 @property (strong, nonatomic) UIPercentDrivenInteractiveTransition *interactiveTransition;
 
 @end
@@ -39,6 +41,10 @@
 @implementation CHXTabBarTransitioningAnimatorCarrier
 
 - (instancetype)initWithTabBarController:(UITabBarController *)tabBarController {
+    return [self initWithTabBarController:tabBarController transitioningAnimatorStyle:CHXTabBarTransitioningAnimatorStyleFlip];
+}
+
+- (instancetype)initWithTabBarController:(UITabBarController *)tabBarController transitioningAnimatorStyle:(CHXTabBarTransitioningAnimatorStyle)transitioningAnimatorStyle {
     self = [super init];
     if (!self) {
         return nil;
@@ -46,8 +52,9 @@
     
     NSParameterAssert(tabBarController);
     _tabBarController = tabBarController;
-
+    
     [self commitInit];
+    [self setupTransitioningAnimatorWithStyle:transitioningAnimatorStyle];
     
     return self;
 }
@@ -58,7 +65,22 @@
     _panGestureRecognizer.delegate = self;
     _panGestureRecognizer.enabled = YES;
     [_tabBarController.view addGestureRecognizer:_panGestureRecognizer];
-    _transitioningAnimator = [[CHXTabBarTransitioningAnimator alloc] initWithTabBarViewController:_tabBarController];
+}
+
+- (void)setupTransitioningAnimatorWithStyle:(CHXTabBarTransitioningAnimatorStyle)transitioningAnimatorStyle {
+    switch (transitioningAnimatorStyle) {
+        case CHXTabBarTransitioningAnimatorStyleFlip:
+            _transitioningAnimator = [[CHXTabBarTransitioningFlipAnimator alloc] initWithTabBarViewController:_tabBarController];
+            break;
+        case CHXTabBarTransitioningAnimatorStyleCover:
+            _transitioningAnimator = [[CHXTabBarTransitioningCoverAnimator alloc] initWithTabBarViewController:_tabBarController];
+            break;
+        case CHXTabBarTransitioningAnimatorStyleRotate:
+            _transitioningAnimator = [[CHXTabBarTransitioningRotateAnimator alloc] initWithTabBarViewController:_tabBarController];
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)sender {

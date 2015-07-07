@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CHXTabBarControllerTransitioning"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "UITabBarController Transitioning animation!"
   s.homepage     = "https://github.com/atcuan/CHXTabBarControllerTransitioning"
   s.license      = "MIT"

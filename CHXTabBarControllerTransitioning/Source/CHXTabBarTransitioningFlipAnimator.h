@@ -26,7 +26,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CHXTabBarTransitioningAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface CHXTabBarTransitioningFlipAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 - (instancetype)initWithTabBarViewController:(UITabBarController *)tabBarController;
 
