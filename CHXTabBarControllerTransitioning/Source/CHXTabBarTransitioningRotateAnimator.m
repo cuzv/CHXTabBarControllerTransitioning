@@ -49,12 +49,15 @@
     NSInteger toIndex = [self.tabBarController.viewControllers indexOfObject:toViewController];
     
     // Prepare rotate
+    CGPoint anchorPoint = fromViewController.view.layer.anchorPoint;
+    CGPoint position = fromViewController.view.layer.position;
+    
     fromViewController.view.layer.anchorPoint = CGPointMake(0.5, 1.5);
     fromViewController.view.layer.position = CGPointMake(CGRectGetWidth(fromViewController.view.bounds) / 2.0f, CGRectGetHeight(fromViewController.view.bounds) * 1.5f);
     
     // Set toViewController animation init positon
     void(^animations)(void) = nil;
-    if (fromIndex < toIndex) {
+    if (fromIndex > toIndex) {
         animations = ^{
             fromViewController.view.transform = CGAffineTransformMakeRotation(M_PI_2);
         };
@@ -72,12 +75,11 @@
                      animations:animations
                      completion:^(BOOL finished) {
                          // If cancel animation, recover the toViewController's position
-                         toViewController.view.transform = CGAffineTransformIdentity;
                          fromViewController.view.transform = CGAffineTransformIdentity;
                          
                          // Recover position and anchorPoint
-                         fromViewController.view.layer.anchorPoint = CGPointMake(0.5, 0.5);
-                         fromViewController.view.layer.position = CGPointMake(CGRectGetWidth(fromViewController.view.bounds) / 2.0f, CGRectGetHeight(fromViewController.view.bounds) / 2.0f);
+                         fromViewController.view.layer.anchorPoint = anchorPoint;
+                         fromViewController.view.layer.position = position;
                          
                          [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
                      }];
