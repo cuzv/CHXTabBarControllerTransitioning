@@ -21,7 +21,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 //    self.carrier = [[CHXTabBarTransitioningAnimatorCarrier alloc] initWithTabBarController:self];
-    self.carrier = [[CHXTabBarTransitioningAnimatorCarrier alloc] initWithTabBarController:self transitioningAnimatorStyle:CHXTabBarTransitioningAnimatorStyleRotate];
+    self.carrier = [[CHXTabBarTransitioningAnimatorCarrier alloc] initWithTabBarController:self transitioningAnimatorStyle:CHXTabBarTransitioningAnimatorStyleCover];
 //    self.carrier.enablePanGestureRecognizer = NO;
     self.delegate = self.carrier;
 }
